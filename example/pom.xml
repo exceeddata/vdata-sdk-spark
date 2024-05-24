@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Replace the group ID with your group ID -->
+    <groupId>com.exceeddata.example</groupId>
+    <!-- Replace the artifact ID with the name of your project -->
+    <artifactId>exceeddata-commons</artifactId>
+    <version>${exceeddata.version}</version>
+    <packaging>jar</packaging>
+    <!-- The name should likely match the artifact ID -->
+    <name>ExceedData Commons</name>
+    <url>http://www.exceeddata.com</url>
+
+    <properties>
+        <maven.compiler.version>3.8.1</maven.compiler.version>
+        <maven.assembly.version>2.6</maven.assembly.version>
+        <maven.surefire.version>2.19.1</maven.surefire.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <exceeddata.version>4.7.0</exceeddata.version>
+        <spark.artifact>2.11</spark.artifact>
+        <!--    <spark.version>2.4.0.cloudera2</spark.version>-->
+        <spark.version>2.4.8</spark.version>
+    </properties>
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <id>scala-tools.org</id>-->
+<!--            <name>Scala-tools Maven2 Repository</name>-->
+<!--            <url>http://scala-tools.org/repo-releases</url>-->
+<!--        </repository>-->
+<!--        <repository>-->
+<!--            <id>cloudera</id>-->
+<!--            <url>https://repository.cloudera.com/artifactory/cloudera-repos/</url>-->
+<!--        </repository>-->
+<!--    </repositories>-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.version}</version>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.exceeddata.sdk</groupId>
+            <artifactId>vdata-sdk-spark_v2_4</artifactId>
+            <version>2.8.3-hadoop-3.0.0-cdh6.3.4-spark-2.4.0-cdh6.3.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.exceeddata.sdk</groupId>
+            <artifactId>vdata-sdk-java</artifactId>
+            <version>2.8.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_${spark.artifact}</artifactId>
+            <version>${spark.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.airlift</groupId>
+            <artifactId>aircompressor</artifactId>
+            <version>0.24</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-mllib_${spark.artifact}</artifactId>
+            <version>${spark.version}</version>
+        </dependency>
+
+    </dependencies>
+</project>
