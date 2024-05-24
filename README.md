@@ -62,11 +62,11 @@ garyshi@GarydeMacBook-Pro Downloads % mvn install:install-file -Dfile=exceeddata
 ```
 
 ## Step By Step Guide
-CH [Step By Step Guide](guide.md)
+[Step By Step Guide CN](guide_cn.md)
 
 ## VSW File Examples
 ### Different Frequency Data  
-- [data_diff_freqency.vsw](https://github.com/exceeddata/sdk-vdata-python/sample_files/vsw/data_diff_freqency.vsw): sample data file with 10Hz, 20Hz, 100Hz datas. This file can be used in vswdecode.py and other language Examples.
+- [data_diff_freqency.vsw](https://github.com/exceeddata/sdk-vdata-python/tree/sample_files/vsw/data_diff_freqency.vsw): sample data file with 10Hz, 20Hz, 100Hz datas. This file can be used in vswdecode.py and other language Examples.
 
 
 ## Getting Help
