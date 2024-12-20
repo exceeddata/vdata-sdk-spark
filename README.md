@@ -6,6 +6,7 @@ The following sections demonstrates how to install and use the SDK.
 
 ## Table of Contents
 - [System Requirement](#system-requirement)
+- [Software Dependencies](#software-dependencies)
 - [License](#license)
 - [Installation](#installation)
 - [VSW File Examples](#vsw-file-examples)
@@ -13,9 +14,12 @@ The following sections demonstrates how to install and use the SDK.
 - [Contributing to EXD](#contributing-to-exd)
 
 ## System Requirement
-- Spark 2.x / 3.x
+- Spark 2.4+ / 3.0+ (2.3 or prior is available upon request) 
 - JDK 8
 
+## Software Dependencies
+- EXD vData SDK 2.9.0+
+- 
 ## License
 The codes in the repository are released with [MIT License](LICENSE).
 
