@@ -9,7 +9,6 @@ The following sections demonstrates how to install and use the SDK.
 - [Software Dependencies](#software-dependencies)
 - [License](#license)
 - [Installation](#installation)
-- [VSW File Examples](#vsw-file-examples)
 - [Getting Help](#getting-help)
 - [Contributing to EXD](#contributing-to-exd)
 
@@ -67,11 +66,6 @@ garyshi@GarydeMacBook-Pro Downloads % mvn install:install-file -Dfile=exceeddata
 
 ## Step By Step Guide
 [Step By Step Guide CN](guide_cn.md)
-
-## VSW File Examples
-### Different Frequency Data  
-- [data_diff_freqency.vsw](https://github.com/exceeddata/sdk-vdata-python/tree/sample_files/vsw/data_diff_freqency.vsw): sample data file with 10Hz, 20Hz, 100Hz datas. This file can be used in vswdecode.py and other language Examples.
-
 
 ## Getting Help
 For usage questions, the best place to go to is [Github issues](https://github.com/exceeddata/sdk-vdata-spark/issues). For customers of EXCEEDDATA commercial solutions, you can contact [support](mailto:support@smartsct.com) for questions or support.
