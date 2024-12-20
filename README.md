@@ -17,8 +17,10 @@ The following sections demonstrates how to install and use the SDK.
 - JDK 8
 
 ## Software Dependencies
-- EXD vData SDK 2.9.0+
-- 
+- [EXD Commons Public Library](https://github.com/exceeddata/commons-public/) 4.9.0+
+- [EXD Formats Public Library](https://github.com/exceeddata/formats-public/) 4.9.0+
+- EXD vData SDK for Java 2.9.0+
+  
 ## License
 The codes in the repository are released with [MIT License](LICENSE).
 
